@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achievements - IEEE SB STM</title>
+  <link rel="stylesheet" href="homecss.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="IEEE_blue.png" alt="IEEE Logo">
+      <h2>IEEE SB STM</h2>
+    </div>
+    <div class="menu-toggle">&#9776;</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ieeeabout.html">About IEEE</a></li>
+        <li><a href="student.html">About SB</a></li>
+        <li><a href="team.html">Executive Committee</a></li>
+        <li><a href="society.html">Societies</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="banner">
+    <h1>Achievements</h1>
+    <p>Recognizing the excellence and milestones of our student branch</p>
+  </section>
+  <section class="overview">
+    <h2>Our Achievements</h2>
+    <ul>
+      <li>Organized 17+ workshops, tech talks, and hackathons in the first year.</li>
+      <li>Students awarded at state-level and national-level technical competitions.</li>
+      <li>Successfully launched IEEE SB STM social media for engagement and outreach.</li>
+      <li>Recognized as one of the fastest-growing student branches in the region.</li>
+      <li>Collaborated with IEEE Kerala Section for technical events and mentorship.</li>
+    </ul>
+  </section>
+  <footer>
+    <p>&copy; 2026 IEEE Student Branch STM. All rights reserved.</p>
+  </footer>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navUl = document.querySelector('nav ul');
+    menuToggle.addEventListener('click', () => {
+      navUl.classList.toggle('show');
+    });
+
+    const links = document.querySelectorAll('nav ul li a');
+    links.forEach(link => {
+      const linkFile = link.getAttribute('href').split('/').pop();
+      const currentFile = window.location.href.split('/').pop();
+      if(linkFile === currentFile) link.classList.add('active');
+      else link.classList.remove('active');
+    });
+  </script>
+
+</body>
+</html>

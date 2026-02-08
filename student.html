@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Student Branch</title>
+  <link rel="stylesheet" href="homecss.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">
+    <img src="IEEE_blue.png" alt="IEEE Logo">
+    <h2>IEEE SB STM</h2>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="ieeeabout.html">About IEEE</a></li>
+      <li><a href="student.html" class="active">About SB</a></li>
+      <li><a href="team.html">Executive Committee</a></li>
+      <li><a href="society.html">Societies</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="membership.html">Membership</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="banner">
+  <h1>About Student Branch</h1>
+  <p>Empowering Students with Technology & Leadership</p>
+  <a href="https://www.ieee.org/membership/join" target="_blank">
+    <button class="join-btn">Join IEEE SB</button>
+  </a>
+</section>
+
+
+<section class="overview">
+  <h2>SB Overview</h2>
+  <p>The IEEE Student Branch at <strong>St. Thomas College of Engineering and Technology, Kannur</strong>, established in December 2023, is a vibrant student-led community driven by innovation, learning, and impact.</p>
+  <p><strong>Active Members:</strong> 30+ &nbsp; | &nbsp; <strong>Events Organised:</strong> 17</p>
+</section>
+
+<section class="overview">
+  <h2>Objectives</h2>
+  <ul>
+    <li>Empower students through workshops, tech talks, hackathons, and competitions.</li>
+    <li>Encourage curiosity, creativity, and collaboration in technology projects.</li>
+    <li>Develop technical expertise, leadership skills, and a strong professional network.</li>
+    <li>Nurture future-ready engineers who innovate responsibly and contribute meaningfully to society.</li>
+  </ul>
+</section>
+
+<section class="overview">
+  <h2>Activities</h2>
+  <ul>
+    <li>Workshops & Seminars</li>
+    <li>Tech Talks by Industry Experts</li>
+    <li>Hackathons & Competitions</li>
+    <li>Collaborative Projects & Real-World Problem Solving</li>
+  </ul>
+</section>
+
+<footer>
+  <p>&copy; 2026 IEEE Student Branch STM. All rights reserved.</p>
+</footer>
+
+<script>
+const links = document.querySelectorAll('nav ul li a');
+links.forEach(link => { if(link.href === window.location.href) link.classList.add('active'); });
+</script>
+
+</body>
+</html>

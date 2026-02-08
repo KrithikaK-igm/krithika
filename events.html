@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Events - IEEE SB STM</title>
+  <link rel="stylesheet" href="homecss.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">
+    <img src="IEEE_blue.png" alt="IEEE Logo">
+    <h2>IEEE SB STM</h2>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="ieeeabout.html">About IEEE</a></li>
+      <li><a href="student.html">About SB</a></li>
+      <li><a href="society.html">Societies</a></li>
+      <li><a href="team.html">Executive Committee</a></li>
+      <li><a href="events.html" class="active">Events</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="membership.html">Membership</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="banner">
+  <h1>Events & Activities</h1>
+  <p>Explore workshops, tech talks, and competitions organized by IEEE SB STM</p>
+</section>
+
+<section class="overview">
+  <h2>Workshop on UI/UX</h2>
+  <p><strong>Date:</strong> 11–13 Sep 2024 | <strong>Participants:</strong> 220</p>
+  <p>Hands-on UI/UX design and prototyping workshop.</p>
+  <img src="Figma.png" height="450" weight="450" alt="UI/UX Workshop Poster" class="poster-image">
+  <img src="UiUx.png" height="450" weight="450" alt="UI/UX Workshop Snapshot" class="poster-image">
+</section>
+
+<section class="overview">
+  <h2>Design Pulse - Poster Competition</h2>
+  <p><strong>Date:</strong> 24 Jan 2025 | <strong>Participants:</strong> 13</p>
+  <p>Poster designing competition encouraging creativity and storytelling.</p>
+  <img src="design.png" height="450" weight="450"alt="Design Pulse Poster" class="poster-image">
+  <img src="designsnap.png"height="450" weight="450" alt="Design Pulse Snapshot" class="poster-image">
+</section>
+
+<section class="overview">
+  <h2>Workshop on Product Design</h2>
+  <p><strong>Date:</strong> 22 Feb 2025 | <strong>Participants:</strong> 24</p>
+  <p>Learn ideation, prototyping, and user testing for product development.</p>
+  <img src="product.png" height="450" weight="450"alt="Product Design Poster" class="poster-image">
+  <img src="productsnap.png"height="450" weight="450" alt="Product Design Snapshot" class="poster-image">
+</section>
+
+<footer>
+  <p>&copy; 2026 IEEE Student Branch STM. All rights reserved.</p>
+</footer>
+
+<script>
+const links = document.querySelectorAll('nav ul li a');
+links.forEach(link => { if(link.href === window.location.href) link.classList.add('active'); });
+</script>
+
+</body>
+</html>

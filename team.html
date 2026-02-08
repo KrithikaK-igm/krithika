@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Executive Committee</title>
+  <link rel="stylesheet" href="homecss.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">
+    <img src="IEEE_blue.png" alt="IEEE Logo">
+    <h2>IEEE SB STM</h2>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="ieeeabout.html">About IEEE</a></li>
+      <li><a href="student.html">About SB</a></li>
+      <li><a href="team.html" class="active">Executive Committee</a></li>
+      <li><a href="society.html">Societies</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="membership.html">Membership</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="banner">
+  <h1>Executive Committee (ExeCom)</h1>
+  <p>The core team drives activities, manages events, and fosters student engagement.</p>
+</section>
+
+<section class="overview">
+  <h2>Executive Committee (ExeCom)
+</h2>
+  <img src="execom.png" height="450" weight="450"  alt="IEEE SB Executive Committee Poster" class="poster-image">
+</section>
+
+<footer>
+  <p>&copy; 2026 IEEE Student Branch STM. All rights reserved.</p>
+</footer>
+
+<script>
+const links = document.querySelectorAll('nav ul li a');
+links.forEach(link => { if(link.href === window.location.href) link.classList.add('active'); });
+</script>
+
+</body>
+</html>
