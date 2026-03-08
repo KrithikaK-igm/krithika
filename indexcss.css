@@ -1,0 +1,234 @@
+/* ===== GLOBAL STYLING ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  background: #f5f9ff;
+}
+
+/* ===== NAVBAR ===== */
+header {
+  background: #004080;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== SECTION COMMON ===== */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #004080;
+}
+
+/* ===== HOME SECTION ===== */
+#home {
+  min-height: 100vh;
+  background: linear-gradient(to right, #e6f0ff, #ffffff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Profile Photo */
+.profile {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid #004080;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  margin-bottom: 25px;
+  transition: 0.4s ease;
+}
+
+.profile:hover {
+  transform: scale(1.08);
+}
+
+/* Heading Gradient */
+#home h1 {
+  font-size: 45px;
+  font-weight: bold;
+  background: linear-gradient(to right, #004080, #0099ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+}
+
+/* Paragraph */
+#home p {
+  font-size: 18px;
+  max-width: 650px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Button */
+.btn {
+  padding: 12px 28px;
+  background: #004080;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,64,128,0.3);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #002a55;
+  transform: translateY(-3px);
+}
+
+/* Social Links */
+.social-links {
+  margin-top: 30px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 12px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 2px solid #004080;
+  text-decoration: none;
+  font-weight: bold;
+  color: #004080;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background: #004080;
+  color: white;
+  transform: scale(1.08);
+}
+
+/* ===== ABOUT SECTION ===== */
+#about p {
+  max-width: 750px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* ===== SKILLS SECTION ===== */
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  width: 260px;
+  padding: 25px;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* ===== PROJECTS SECTION ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.project {
+  padding: 25px;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+/* ===== CONTACT FORM ===== */
+form {
+  max-width: 450px;
+  margin: auto;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin: 12px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  background: #004080;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #002a55;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #004080;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  margin-top: 40px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  #home h1 {
+    font-size: 32px;
+  }
+
+  .profile {
+    width: 140px;
+    height: 140px;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
